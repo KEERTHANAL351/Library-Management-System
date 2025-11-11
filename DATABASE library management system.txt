@@ -1,0 +1,21 @@
+CREATE DATABASE library_db;
+USE library_db;
+
+
+CREATE TABLE books (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  title VARCHAR(100),
+  author VARCHAR(100),
+  publisher VARCHAR(100),
+  available_copies INT
+);
+
+select * from books
+
+
+CREATE TABLE members (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100),
+  email VARCHAR(100),
+  phone VARCHAR(15)
+);
